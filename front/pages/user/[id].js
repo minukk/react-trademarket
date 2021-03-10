@@ -47,11 +47,6 @@ const User = () => {
             {userInfo.nickname}
             님의 글
           </title>
-          <meta name="description" content={`${userInfo.nickname}님의 게시글`} />
-          <meta property="og:title" content={`${userInfo.nickname}님의 게시글`} />
-          <meta property="og:description" content={userInfo.nickname} />
-          <meta property="og:image" content="" />
-          <meta property="og:url" content={`http://localhost:3000/user/${id}`} />
         </Head>
       )}
       {mainProducts.map((c) => <PostCard key={c.id} product={c} />)}
